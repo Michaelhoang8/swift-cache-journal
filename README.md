@@ -8,6 +8,8 @@ Language: **Swift**.
 
 ## Run
 
+Requires Swift 6; the package targets macOS 13 or newer.
+
 ```sh
 swift run cache-journal fixtures/journal.json
 ```
