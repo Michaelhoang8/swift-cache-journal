@@ -1,0 +1,8 @@
+[
+  {"op":"put","key":"a","value":"A","ttl":10,"now":0},
+  {"op":"put","key":"b","value":"B","ttl":10,"now":0},
+  {"op":"get","key":"a","now":1},
+  {"op":"put","key":"c","value":"C","ttl":2,"now":1},
+  {"op":"get","key":"b","now":1},
+  {"op":"get","key":"c","now":3}
+]

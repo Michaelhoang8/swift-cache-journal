@@ -1,0 +1,12 @@
+name: Native validation
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v6
+      - run: swift --version
+      - run: swift run cache-journal --test
+      - run: swift run cache-journal fixtures/journal.json
